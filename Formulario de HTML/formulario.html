@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>
+      Formulário de Cadastro
+    </title> 
+    <style>
+      body{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+  <h1>Formulário de Cadastro</h1>
+  
+    <form>
+      <p>
+        Nome completo: <input type='text' placeholder='Informe o nome completo'autofocus='true'
+        required='true'> 
+      <p>
+        E-mail: <input type='email' placeholder='Informe um e-mail válido'>
+      </p>
+      <p> 
+        Sexo:
+        <input type='radio' id='m' name='sexo' value='m'>
+        <label for='m'>Masculino</label>
+        <input type='radio' id='f' name='sexo' value='f' checked>
+        <label for='f'>Feminino</label>
+      </p>
+      <p>
+        Data de nascimento:
+        <input type='date' id='dat'>
+      </p>
+      <p>
+        Grau de escolaridade:
+        <select name='Grau de escolaridade' size='1'>
+          <option value='Ensino Médio'>Ensino Médio</option>
+          <option value='Superior Completo'selected>Superior Completo</option>
+          <option value='Pós-graduação'>Pós-graduação</option>
+          <option value='Mestrado'>Mestrado</option>
+          <option value='Doutorado'>Doutorado</option>
+        </select>
+      </p>
+      <p>
+        Estilos musicais preferidos:
+        <select name='Grau de escolaridade' multiple='true' size='5'>
+          <option value='Rock'>Rock</option>
+          <option value='Funk'>Funk</option>
+          <option value='Samba'>Samba</option>
+          <option value='Pagode'>Pagode</option>
+          <option value='Pop'>Pop</option>
+        </select>
+      </p>
+      <p>
+        Nome de usuário: <input type='text'> 
+      <p>
+      <p>
+        Senha: <input type='password'>
+      </p>
+      <p>
+        Cor preferida: <input type='color'>
+      </p>
+      <p>
+        Quantidade de filhos: <input type='text' size='1'>
+      </p>
+      <p>
+        Quantidade de veículos: <input type='range'>
+      </p>
+      <p>
+      Comentário sobre o site: <textarea cols='30' rows='5'></textarea>
+      </p>
+      <p>
+        <input type='checkbox'>Desejo receber ofertas via e-mail.
+      </p>
+      <input type='submit' value='Enviar'>
+      <input type='reset' value='Limpar dados'>
+    </form>
+  </body>
+</html>
